@@ -1,0 +1,11 @@
+Project Outline:
+
+Write a simple system for periodically checking RSS feeds, parsing them, and storing the most relevent data.  Write a simple presentation layer that presents the past day's items in a newspaper-like visual format.  The simple presentation layer will form the core use case from which more complex needs can be articulated.  For instance the automatic classification of stories according to content keywords.
+
+Subcomponents:
+
+database - SQL files for rdb tables, tested in postgres
+
+update_feeds - update layer for the database; checks for new content on each subscription and loads any such content into the database
+
+newspaper - an example presentation layer for the database; renders a newspaper-like visual representation of a given day's feed content
